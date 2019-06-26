@@ -1,0 +1,106 @@
+//----------------------
+// FONTS
+//----------------------
+
+//font-stacks
+
+$font-url-google : 'https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,200,300,400,400i,500,600,700';
+$font-primary   :   'IBM Plex Sans', sans-serif;
+$font-secondary-sans : 'Helvetica, Arial, sans-serif';
+
+//font color 
+
+$white    : #fff;
+$base-grey   : #232323;
+$font-grey-2: #242424;
+$font-grey-3: #797979;
+
+$font-primary  :   $white;
+$font-secondary:   $base-grey;
+
+// font weight
+
+$font-weight-thin:  100;
+$font-weight-extra-light:   200;
+$font-weight-light: 300;
+$font-weight-reg:   400;
+$font-weight-bold:  700;
+
+// font-size
+
+$font-size-sm:   16px;
+$font-size-base:   18px;
+$font-size-lg:   1.43em;
+
+
+//----------------------
+//BREAKPOINTS
+//----------------------
+
+$brkpoint-sm    :   1px;
+$brkpoint-md    :   768px;
+$brkpoint-lg    :   1399px;
+
+
+
+
+//----------------------
+//COLORS 
+//----------------------
+
+// theme
+
+$theme-primary  :   #00134B;
+$theme-second   :   #054695;
+$theme-third    :   #068FCC;
+$white          :   #fff;
+$black          :   #090914;
+
+//btn
+
+$red       :   #D6000A;
+
+
+
+
+
+
+$gutter: 75px;
+
+// borders 
+
+$border-base: 2px solid;
+
+$border-rad-base    :  5px;
+$border-rad-round   :   50%;
+
+//----------------------
+// GRID
+//----------------------
+
+$g-col-width: 65px;
+$g-gutter-width: 10px;
+$g-col-count: 12;
+$g-count-max-w: 1040px;
+
+// grid-colors
+
+$riptide        :   #80e8d1;
+$shakespear     :   #3fabca;
+$anakiwa        :   #7ee6fd;
+$french-lilak   :   #deb2ee;
+$vista-blue     :   #88d9a0;
+$sea-pink       :   #ec9fa3;
+$vivid-tangerine:   #fd9f85;
+
+// grid map
+
+$grid-colors: (
+    12  :   $riptide,
+    6   :   $shakespear,
+    4   :   $anakiwa,
+    3   :   $french-lilak,
+    5   :   $vista-blue,
+    7   :   $sea-pink,
+    8   :   $vivid-tangerine
+);

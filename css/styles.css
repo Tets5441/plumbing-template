@@ -1,7 +1,181 @@
 * {
   box-sizing: border-box; }
 
-p {
-  color: green; }
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+
+ul {
+  list-style: none; }
+
+.logo-link img {
+  height: 50px; }
+
+.main-nav {
+  align-content: center;
+  margin: auto;
+  background: #090914;
+  height: 53px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  @media (min-width: 1400px) {
+    .main-nav {
+      width: 75%; } }
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #fff; }
+
+nav a {
+  color: #fff;
+  text-decoration: none; }
+
+/**************************************
+  Nav hamburger menu The necessary CSS styles for the navigation.
+  **************************************/
+#sidebarMenu {
+  height: 100%;
+  position: fixed;
+  right: 0;
+  width: 250px;
+  margin-top: 52.5px;
+  transform: translateX(250px);
+  transition: transform 250ms ease-in-out;
+  background: #00134B; }
+
+.sidebarMenuInner {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); }
+
+.sidebarMenuInner li {
+  list-style: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+
+.sidebarMenuInner li span {
+  display: block;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5); }
+
+.sidebarMenuInner li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none; }
+
+/**************************************
+ Style & animate the hamburger toggle button.
+ **************************************/
+input[type="checkbox"]:checked ~ #sidebarMenu {
+  transform: translateX(0); }
+
+input[type=checkbox] {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  display: none; }
+
+.sidebarIconToggle {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  cursor: pointer;
+  /*position: absolute;*/
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  top: 22px;
+  left: 15px;
+  height: 22px;
+  width: 22px;
+  float: right;
+  margin: 15px 15px 0 15px; }
+
+.spinner {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #fff; }
+
+.horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px; }
+
+.diagonal.part-1 {
+  position: relative;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  float: left; }
+
+.diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px; }
+
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  opacity: 0; }
+
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(135deg);
+  margin-top: 8px; }
+
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(-135deg);
+  margin-top: -9px; }
+
+header {
+  height: 33.3333333333em;
+  text-align: center;
+  background: linear-gradient(0deg, rgba(5, 70, 149, 0.8), rgba(0, 19, 75, 0.8)), url("../images/plumber-2788334_1920.jpg") no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  opacity: 0.9;
+  color: #fff; }
+
+.business-bar {
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  background: #00134B; }
+  @media (min-width: 769px) {
+    .business-bar {
+      width: 75%;
+      margin-top: 20px; } }
+
+.bus-bar-phone {
+  padding-left: 0.5555555556em;
+  margin: 20px auto; }
+
+.bus-bar-fb {
+  display: none; }
+  @media (min-width: 769px) {
+    .bus-bar-fb {
+      display: flex; } }
 
 /*# sourceMappingURL=styles.css.map */

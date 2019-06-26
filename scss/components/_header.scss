@@ -1,0 +1,40 @@
+header {
+    height: em(600px);
+    text-align: center;
+    background: linear-gradient(0deg, rgba(5,70,149,0.8), rgba(0,19,75,0.8)), url('../images/plumber-2788334_1920.jpg') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    opacity: 0.9;
+    color: $white;
+}
+
+//----------------------
+//BUSINESS BAR 
+//----------------------
+
+.business-bar {
+    text-align: center;
+    margin: auto;
+    @include flexbox ($disp: flex, $dir: row, $wrap: wrap, $just: space-between);
+    width: 100%;
+    background: $theme-primary;
+    @include mq (medium) {
+        width: 75%;
+        margin-top: 20px;
+    }
+    @include mq (large) {
+        
+    }
+}
+
+.bus-bar-phone {
+    padding-left: em(10px);
+    margin: 20px auto;
+}
+
+.bus-bar-fb {
+    display: none;
+    @include mq (medium) {
+        display: flex;
+    }
+}
