@@ -21,6 +21,8 @@ header {
     @include mq (medium) {
         width: 75%;
         margin-top: 20px;
+        border-radius: $border-rad-med;
+        margin-bottom: em(5px);
     }
     @include mq (large) {
         

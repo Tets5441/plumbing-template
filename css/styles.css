@@ -21,6 +21,9 @@ ul {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between; }
+  @media (min-width: 769px) {
+    .main-nav {
+      border-radius: 10px; } }
   @media (min-width: 1400px) {
     .main-nav {
       width: 75%; } }
@@ -166,7 +169,9 @@ header {
   @media (min-width: 769px) {
     .business-bar {
       width: 75%;
-      margin-top: 20px; } }
+      margin-top: 20px;
+      border-radius: 10px;
+      margin-bottom: 0.2777777778em; } }
 
 .bus-bar-phone {
   padding-left: 0.5555555556em;

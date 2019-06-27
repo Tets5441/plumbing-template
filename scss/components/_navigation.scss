@@ -4,6 +4,9 @@
     background: $black;
     height: 53px;
     @include flexbox ($disp: flex, $dir: row, $wrap: wrap, $just: space-between);
+    @include mq (medium) {
+      border-radius: $border-rad-med;
+    }
     @include mq (large) {
         width: 75%;
     }
